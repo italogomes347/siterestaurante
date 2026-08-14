@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savor & Art | Gastronomia Contemporânea</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand">
+                <span class="brand-text">Savor <span>&</span> Art</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#menu" class="nav-link">Cardápio</a>
+                <a href="#destaques" class="nav-link">Cupons & Especiais</a>
+                <a href="#contato" class="nav-link">Contato & Reservas</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="btn-open-auth" class="btn btn-outline nav-btn">Entrar</button>
+                <button id="btn-open-cart" class="btn btn-primary nav-btn cart-btn">
+                    Meu Pedido <span class="cart-badge" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <span class="badge">Alta Gastronomia Contemporânea</span>
+            <h1 class="hero-title">Uma experiência de sabores inesquecíveis</h1>
+            <p class="hero-desc">Ingredientes selecionados, preparo artesanal e a tradição da boa mesa, no conforto da sua casa.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary btn-lg">Explorar Cardápio</a>
+                <a href="#destaques" class="btn btn-outline btn-lg">Ver Cupons</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="destaques" class="coupons-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Aproveite as Ofertas</span>
+                <h2 class="section-title">Cupons Exclusivos de Desconto</h2>
+                <p class="section-desc">Copie os códigos abaixo e insira no carrinho ao finalizar seu pedido.</p>
+            </div>
+
+            <div class="coupons-grid grid grid-3">
+                <div class="coupon-card">
+                    <div class="coupon-badge">30% OFF</div>
+                    <h3>VIP30</h3>
+                    <p>Desconto especial em todo o cardápio para clientes VIP.</p>
+                    <span class="coupon-code">CÓDIGO: <strong>VIP30</strong></span>
+                </div>
+                <div class="coupon-card">
+                    <div class="coupon-badge">Primeiro Pedido</div>
+                    <h3>BEMVINDO</h3>
+                    <p>20% de desconto na sua primeira experiência gastronômica.</p>
+                    <span class="coupon-code">CÓDIGO: <strong>BEMVINDO</strong></span>
+                </div>
+                <div class="coupon-card">
+                    <div class="coupon-badge">Seleção do Chef</div>
+                    <h3>CHEFSPECIAL</h3>
+                    <p>25% de desconto nos pratos principais da casa.</p>
+                    <span class="coupon-code">CÓDIGO: <strong>CHEFSPECIAL</strong></span>
+                </div>
+                <div class="coupon-card">
+                    <div class="coupon-badge">Entrega Grátis</div>
+                    <h3>ENTREGAGRATIS</h3>
+                    <p>Isenção total da taxa de entrega do seu pedido.</p>
+                    <span class="coupon-code">CÓDIGO: <strong>ENTREGAGRATIS</strong></span>
+                </div>
+                <div class="coupon-card">
+                    <div class="coupon-badge">15% OFF</div>
+                    <h3>SELECAO</h3>
+                    <p>Condição especial na escolha das nossas sobremesas e bebidas.</p>
+                    <span class="coupon-code">CÓDIGO: <strong>SELECAO</strong></span>
+                </div>
+                <div class="coupon-card">
+                    <div class="coupon-badge">Desconto Fixo</div>
+                    <h3>GOURMET10</h3>
+                    <p>Desconto imediato de 10% adicional ao valor do carrinho.</p>
+                    <span class="coupon-code">CÓDIGO: <strong>GOURMET10</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu section-padding bg-alt">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Nosso Cardápio</span>
+                <h2 class="section-title">Pratos Exclusivos</h2>
+                <p class="section-desc">Elaborados com ingredientes frescos e técnicas refinadas.</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Produto 1 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=500&q=70" alt="Tartare de Atum" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 85,00</span>
+                            <span class="card-price">R$ 68,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Tartare de Atum Fresco</h3>
+                        <p>Atum selado com crosta de gergelim, abacate grelhado e azeite trufado.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Tartare de Atum Fresco" data-price="68">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <span class="promo-tag">Sugestão do Chef</span>
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=70" alt="Ancho Nelore" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 150,00</span>
+                            <span class="card-price">R$ 125,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Prime Ancho Dry Aged</h3>
+                        <p>Corte nobre maturado por 45 dias com mousseline de batata trufada.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Prime Ancho Dry Aged" data-price="125">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=500&q=70" alt="Salmão" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 120,00</span>
+                            <span class="card-price">R$ 98,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Risotto de Salmão & Aspargos</h3>
+                        <p>Arroz arbóreo com açafrão, lascas de salmão grelhado e aspargos frescos.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Risotto de Salmão & Aspargos" data-price="98">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=500&q=70" alt="Pizza" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 90,00</span>
+                            <span class="card-price">R$ 72,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Pizza Artesanal de Cogumelos</h3>
+                        <p>Fermentação natural 48h, cogumelos selvagens frescos e queijo gruyère.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Pizza Artesanal de Cogumelos" data-price="72">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=500&q=70" alt="Sobremesa" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 48,00</span>
+                            <span class="card-price">R$ 35,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Esfera de Chocolate Belga</h3>
+                        <p>Chocolate 70% cacau recheado com gelato artesanal de baunilha.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Esfera de Chocolate Belga" data-price="35">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <span class="promo-tag">Carta de Vinhos</span>
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=500&q=70" alt="Vinho" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 210,00</span>
+                            <span class="card-price">R$ 165,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Vinho Reserva Grand Cru</h3>
+                        <p>Garrafa 750ml, harmonização perfeita para carnes nobres e massas.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Vinho Reserva Grand Cru" data-price="165">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 7 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500&q=70" alt="Carpaccio de Mignon" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 75,00</span>
+                            <span class="card-price">R$ 58,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Carpaccio de Filet Mignon</h3>
+                        <p>Lâminas finas de mignon, alcaparras, molho de mostarda dijon e parmesão.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Carpaccio de Filet Mignon" data-price="58">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 8 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=500&q=70" alt="Camarões Grelhados" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 160,00</span>
+                            <span class="card-price">R$ 138,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Camarões Rosa Flambados</h3>
+                        <p>Camarões salteados no conhaque com arroz de amêndoas e ervas finas.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Camarões Rosa Flambados" data-price="138">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 9 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=70" alt="Massa Carbonara Trufada" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 95,00</span>
+                            <span class="card-price">R$ 79,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Spaghetti Carbonara Trufado</h3>
+                        <p>Massa fresca, guanciale artesanal, gemas curadas e lascas de trufa preta.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Spaghetti Carbonara Trufado" data-price="79">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 10 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=500&q=70" alt="Ravioli de Lagostim" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 130,00</span>
+                            <span class="card-price">R$ 108,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Ravioli de Lagostim Artesanal</h3>
+                        <p>Massa caseira recheada com lagostim ao molho suave de limão siciliano.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Ravioli de Lagostim Artesanal" data-price="108">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 11 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=500&q=70" alt="Polvo Grelhado" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 175,00</span>
+                            <span class="card-price">R$ 145,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Polvo à Lagareiro com Batatas</h3>
+                        <p>Tentáculos de polvo grelhados no azeite de oliva, alho assado e batatas murro.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Polvo à Lagareiro" data-price="145">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 12 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=500&q=70" alt="Bacalhau Confitado" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 155,00</span>
+                            <span class="card-price">R$ 128,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Bacalhau Confitado em Ervas</h3>
+                        <p>Lombo de bacalhau cozido lentamente no azeite com azeitonas pretas e pimentões.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Bacalhau Confitado" data-price="128">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 13 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=70" alt="Cordeiro Assado" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 165,00</span>
+                            <span class="card-price">R$ 139,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Carré de Cordeiro Crocante</h3>
+                        <p>Cordeiro em crosta de ervas de Provence servido com risoto de hortelã.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Carré de Cordeiro Crocante" data-price="139">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 14 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=500&q=70" alt="Hamburguer Gourmet" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 65,00</span>
+                            <span class="card-price">R$ 49,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Burger Savor Wagyu 200g</h3>
+                        <p>Blend de Wagyu, queijo cheddar inglês, bacon artesanal e maionese trufada.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Burger Savor Wagyu 200g" data-price="49">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 15 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=70" alt="Salada Burrata" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 70,00</span>
+                            <span class="card-price">R$ 54,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Salada de Burrata Fresca</h3>
+                        <p>Burrata artesanal, tomates confitados, pesto de manjericão e focaccia crocante.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Salada de Burrata Fresca" data-price="54">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 16 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=500&q=70" alt="Cheesecake de Frutas Vermelhas" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 42,00</span>
+                            <span class="card-price">R$ 32,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Cheesecake de Frutas Vermelhas</h3>
+                        <p>Receita clássica nova-iorquina com calda caseira de framboesa e mirtilos.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Cheesecake Frutas Vermelhas" data-price="32">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 17 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=500&q=70" alt="Petit Gateau" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 45,00</span>
+                            <span class="card-price">R$ 36,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Petit Gâteau com Sorvete de Creme</h3>
+                        <p>Bolo quente de chocolate cremoso com gelato artesanal de baunilha em fava.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Petit Gâteau Clássico" data-price="36">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 18 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=500&q=70" alt="Tiramisu Italiano" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 40,00</span>
+                            <span class="card-price">R$ 30,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Tiramisù Italiano Tradicional</h3>
+                        <p>Biscoitos savoiardi embebidos em café espresso, mascarpone e cacau em pó.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Tiramisù Italiano Tradicional" data-price="30">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 19 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=500&q=70" alt="Drink Negroni" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 48,00</span>
+                            <span class="card-price">R$ 38,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Cocktail Negroni Artesanal</h3>
+                        <p>Gin premium, vermute tinto, campari e twist de casca de laranja bahia.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Cocktail Negroni Artesanal" data-price="38">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 20 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=500&q=70" alt="Gin Tônica Especial" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 46,00</span>
+                            <span class="card-price">R$ 36,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Gin Tônica Botanical</h3>
+                        <p>Gin botânico infusicionado com zimbro, pepino, alecrim fresco e tônica premium.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Gin Tônica Botanical" data-price="36">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+                <!-- NOVO Produto 21 -->
+                <div class="menu-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=70" alt="Suco Natural de Laranja" loading="lazy">
+                        <div class="price-box">
+                            <span class="old-price">R$ 22,00</span>
+                            <span class="card-price">R$ 16,00</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Suco Natural de Frutas Frescas 500ml</h3>
+                        <p>Preparado na hora: escolha entre Laranja, Frutas Vermelhas ou Abacaxi com Hortelã.</p>
+                        <button class="btn btn-primary btn-block btn-add-cart" data-name="Suco Natural de Frutas 500ml" data-price="16">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="footer">
+        <div class="container footer-content grid grid-3">
+            <div>
+                <h3 class="footer-title">Savor & Art</h3>
+                <p>Gastronomia refinada elaborada para proporcionar uma experiência inesquecível a cada refeição.</p>
+            </div>
+            <div>
+                <h4>Formas de Pagamento</h4>
+                <p>Cartões de Crédito / Débito</p>
+                <p>Pagamento via PIX</p>
+                <p>PayPal & Criptomoedas</p>
+            </div>
+            <div>
+                <h4>Endereço & Contato</h4>
+                <p>Av. das Nações Unidas, 1290 - São Paulo, SP</p>
+                <p>E-mail: contato@savorart.com</p>
+                <p>Telefone: (11) 3000-0000</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Savor & Art. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="close-auth">&times;</span>
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="tab-login-btn">Acessar Conta</button>
+                <button class="auth-tab" id="tab-signup-btn">Cadastrar</button>
+            </div>
+
+            <form id="form-login" class="booking-form">
+                <div class="form-group">
+                    <label>E-mail ou CPF</label>
+                    <input type="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+            </form>
+
+            <form id="form-signup" class="booking-form hidden">
+                <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="text" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>CPF</label>
+                        <input type="text" placeholder="000.000.000-00" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Telefone</label>
+                        <input type="tel" placeholder="(11) 99999-9999" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" placeholder="Sua senha" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Concluir Cadastro</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content modal-lg">
+            <span class="modal-close" id="close-cart">&times;</span>
+            <h2 class="modal-title">Seu Pedido & Finalização</h2>
+            <p class="modal-subtitle">Confira os itens selecionados e informe o endereço para entrega.</p>
+
+            <div class="checkout-grid">
+                <div class="checkout-left">
+                    <h4>Itens Selecionados</h4>
+                    <div class="cart-items" id="cart-items-container">
+                    </div>
+
+                    <div class="coupon-box">
+                        <label>Possui um código de cortesia?</label>
+                        <div class="coupon-input-group">
+                            <input type="text" id="coupon-input" placeholder="Ex: VIP30">
+                            <button class="btn btn-outline" type="button" id="btn-apply-coupon">Aplicar</button>
+                        </div>
+                    </div>
+
+                    <div class="order-summary">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="summary-subtotal">R$ 0,00</span>
+                        </div>
+                        <div class="summary-row discount">
+                            <span>Desconto Aplicado:</span>
+                            <span id="summary-discount">- R$ 0,00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Taxa de Entrega:</span>
+                            <span id="summary-freight">R$ 0,00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Valor Total:</span>
+                            <span id="summary-total">R$ 0,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-right">
+                    <form class="booking-form" id="checkout-form">
+                        <h4>Endereço para Entrega</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>CEP</label>
+                                <input type="text" placeholder="00000-000" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Cidade / UF</label>
+                                <input type="text" placeholder="São Paulo / SP" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Rua / Avenida</label>
+                            <input type="text" placeholder="Endereço da entrega" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Número / Apto</label>
+                                <input type="text" placeholder="123" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Bairro</label>
+                                <input type="text" placeholder="Bairro" required>
+                            </div>
+                        </div>
+
+                        <h4>Forma de Pagamento</h4>
+                        <div class="payment-methods">
+                            <label class="payment-option">
+                                <input type="radio" name="payment-method" value="pix" checked>
+                                <span>Pagamento via PIX</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment-method" value="card">
+                                <span>Cartão de Crédito ou Débito</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment-method" value="paypal">
+                                <span>PayPal</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment-method" value="crypto">
+                                <span>Criptomoedas (BTC / USDT)</span>
+                            </label>
+                        </div>
+
+                        <div id="payment-details-box" class="payment-details-box">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 15px;">
+                            Finalizar Pedido
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
